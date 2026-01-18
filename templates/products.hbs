@@ -1,0 +1,12 @@
+<ul>
+  {{#each this}}
+    <li>
+      <strong>{{name}}</strong> — {{price}} грн
+      {{#if inStock}}
+        <span>(в наявності)</span>
+      {{else}}
+        <span>(немає)</span>
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>
